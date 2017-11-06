@@ -3,11 +3,7 @@
 It's a exercise after reading the OpenCV documents and walktrough
 
 ## Exercise 1
-Matrix elements are stored row by row. Element (i, j) (i - 0-based row index, j - 0-based column index) of a matrix can be retrieved or modified using CV_MAT_ELEM macro:
-
-uchar pixval = CV_MAT_ELEM(grayimg, uchar, i, j)
-CV_MAT_ELEM(cameraMatrix, float, 0, 2) = image.width*0.5f;
-To access multiple-channel matrices, you can use CV_MAT_ELEM(matrix, type, i, j*nchannels + channel_idx).
+Matrix elements are stored row by row. Element (i, j) (i - 0-based row index, j - 0-based column index) of a matrix can be retrieved or modified using CV_MAT_ELEM 
 
 ## Exercise 2
 #1.The outputs are 10 images:
