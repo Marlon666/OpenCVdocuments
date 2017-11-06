@@ -10,7 +10,8 @@ CV_MAT_ELEM(cameraMatrix, float, 0, 2) = image.width*0.5f;
 To access multiple-channel matrices, you can use CV_MAT_ELEM(matrix, type, i, j*nchannels + channel_idx).
 
 ## Exercise 2
-1. The outputs are 10 images:
+1. 
+The outputs are 10 images:
 
 The first image is the orginial image.
 
@@ -26,7 +27,8 @@ The 9th image shows the saturation of a color which is determined by a combinati
 
 The 10th images shows the brightness of the image.
 
-2. The value of pixel at (20,25) of Lenna image
+2. 
+The value of pixel at (20,25) of Lenna image
 
 ('RGB [20,25] : ', array([106, 122, 225], dtype=uint8))
 ('YCbCr [20,25] : ', array([151, 181, 103], dtype=uint8))
@@ -56,7 +58,8 @@ As the values increasing, there are more noise created. As the kernels sizes inc
 The results shows that for Gaussian Noise, Gaussian Filter works better, and for Salt-and-Pepper Noise, Median filter works better.
 
 ## Exercise 4
-1. In adaptive threshold, the algorithm calculate the threshold for a small regions of the image. So we get different thresholds for different regions of the same image and it gives us better results for images with varying illumination.
+1. 
+In adaptive threshold, the algorithm calculate the threshold for a small regions of the image. So we get different thresholds for different regions of the same image and it gives us better results for images with varying illumination.
 
 The band threshold take the upper band and lower band, which only shows limited range of color scalar of the images.
 
@@ -64,9 +67,11 @@ The binary threshold only shows black and white by deviding equally the range of
 
 The semi threshold takes the extreme value from the high value and low value.
 
-2. The binary threshold takes one threshold value for the whole image and resulted in a black and white only. It may not suitable for all kind of image/condition. For example, if an image are concentrated on only certain range of gray scale, then it will show nothing after the binary threshold.
+2. 
+The binary threshold takes one threshold value for the whole image and resulted in a black and white only. It may not suitable for all kind of image/condition. For example, if an image are concentrated on only certain range of gray scale, then it will show nothing after the binary threshold.
 
-3. Adaptive binarization can be divided into three categories:
+3. 
+Adaptive binarization can be divided into three categories:
 
 Global method: with this method first of the background of the image is estimated; after that a normalized image is generated with the help of the background information. Then global binarization method is employed.
 
